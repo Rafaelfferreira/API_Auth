@@ -16,6 +16,9 @@ mongoose.connect(process.env.DB_CONNECT, // accessing the .env file through proc
     console.log('Connected to the DB');
 });
 
+app.get('/', (req, res) => {
+    res.send('Conectou')
+});
 
 //Middleware
 app.use(express.json());
