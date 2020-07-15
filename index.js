@@ -25,4 +25,4 @@ app.use('/api/user', authRoute);
 app.use('/api/restaurants', restaurantsRoute)
 
 
-app.listen(3000, () => console.log('The Server is running!'));
+app.listen(process.env.PORT || 3000, () => console.log('The Server is running!'));
