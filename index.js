@@ -27,5 +27,5 @@ app.use(express.json());
 app.use('/api/user', authRoute);
 app.use('/api/restaurants', restaurantsRoute)
 
-
+// Apparently: Heroku search the env.PORT
 app.listen(process.env.PORT || 3000, () => console.log('The Server is running!'));
